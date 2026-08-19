@@ -1,0 +1,12 @@
+{
+  "name": "marea-travel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A cinematic travel landing page for soulful journeys across Algeria.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check script.js && node --check server.mjs"
+  }
+}

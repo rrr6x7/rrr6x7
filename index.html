@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Marea curates soulful stays and unhurried journeys across Algeria, from the Mediterranean coast to the Sahara."
+    />
+    <meta name="theme-color" content="#1f241c" />
+    <meta property="og:title" content="Marea — Come back different" />
+    <meta property="og:description" content="Soulful stays and unhurried journeys across Algeria." />
+    <meta property="og:image" content="assets/hero-mediterranean.jpg" />
+    <title>Marea — Come back different</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/hero-mediterranean.jpg" as="image" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#top" aria-label="Marea home">
+        <svg class="brand-mark" viewBox="0 0 30 30" aria-hidden="true">
+          <path d="M15 1.8c.5 8.1 5.1 12.7 13.2 13.2-8.1.5-12.7 5.1-13.2 13.2C14.5 20.1 9.9 15.5 1.8 15 9.9 14.5 14.5 9.9 15 1.8Z" />
+        </svg>
+        <span>MAREA</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#stays">Stays</a>
+        <a href="#journal">Journeys</a>
+        <a href="#about">Our way</a>
+      </nav>
+
+      <a class="header-cta" href="#planner">Plan your escape <span aria-hidden="true">↗</span></a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="sr-only">Open menu</span>
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+      <nav aria-label="Mobile navigation">
+        <a href="#stays"><span>01</span> Stays</a>
+        <a href="#journal"><span>02</span> Journeys</a>
+        <a href="#about"><span>03</span> Our way</a>
+      </nav>
+      <a href="#planner" class="button button-light mobile-plan">Plan your escape <span>↗</span></a>
+      <p>From the Mediterranean<br />to the Sahara.</p>
+    </div>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/hero-mediterranean.jpg"
+          alt="A serene white villa and pool overlooking Algeria's Mediterranean coast"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> Private escapes, rooted in place</p>
+          <h1 id="hero-title">Come back<br /><em>different.</em></h1>
+          <p class="hero-copy">Soulful stays and unhurried journeys through a side of Algeria few ever get to see.</p>
+        </div>
+        <div class="hero-index" aria-hidden="true">
+          <span>35.699° N</span>
+          <i></i>
+          <span>0.633° W</span>
+        </div>
+        <a class="scroll-cue" href="#intro"><span>Scroll to wander</span><i aria-hidden="true">↓</i></a>
+
+        <form class="planner" id="planner" aria-label="Find an escape">
+          <label class="planner-field">
+            <span>Where</span>
+            <select id="destination" name="destination">
+              <option value="All regions">All regions</option>
+              <option value="The coast">The coast</option>
+              <option value="The Sahara">The Sahara</option>
+              <option value="The mountains">The mountains</option>
+            </select>
+          </label>
+          <label class="planner-field">
+            <span>When</span>
+            <input id="travelDate" name="date" type="date" aria-label="Travel date" />
+          </label>
+          <label class="planner-field">
+            <span>Travellers</span>
+            <select id="travellers" name="travellers">
+              <option value="2 travellers">2 travellers</option>
+              <option value="1 traveller">1 traveller</option>
+              <option value="3 travellers">3 travellers</option>
+              <option value="4+ travellers">4+ travellers</option>
+            </select>
+          </label>
+          <button class="planner-submit" type="submit" aria-label="Find my escape">
+            <span>Find my escape</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 14 0M14 7l5 5-5 5" /></svg>
+          </button>
+        </form>
+      </section>
+
+      <section class="intro section" id="intro" aria-labelledby="intro-title">
+        <div class="section-label reveal"><span>01</span> The Marea feeling</div>
+        <div class="intro-grid">
+          <h2 class="display-title reveal" id="intro-title">Travel slowly.<br />Feel <em>everything.</em></h2>
+          <div class="intro-copy reveal">
+            <p>We seek out places with soul — spaces shaped by the land, hosted by people who know it by heart.</p>
+            <p>No rushed itineraries. No velvet ropes. Just a thoughtful way into wild coastlines, quiet mountains, and desert skies.</p>
+            <a class="text-link" href="#about">Discover our way <span>↗</span></a>
+          </div>
+        </div>
+        <div class="marquee" aria-label="Our travel values">
+          <div class="marquee-track">
+            <span>Wild places</span><i>✦</i><span>Warm welcomes</span><i>✦</i><span>Stories worth keeping</span><i>✦</i>
+            <span aria-hidden="true">Wild places</span><i aria-hidden="true">✦</i><span aria-hidden="true">Warm welcomes</span><i aria-hidden="true">✦</i><span aria-hidden="true">Stories worth keeping</span><i aria-hidden="true">✦</i>
+          </div>
+        </div>
+      </section>
+
+      <section class="stays section" id="stays" aria-labelledby="stays-title">
+        <div class="stays-heading">
+          <div>
+            <div class="section-label reveal"><span>02</span> Places to pause</div>
+            <h2 class="display-title reveal" id="stays-title">Stay somewhere<br /><em>unforgettable.</em></h2>
+          </div>
+          <div class="filters reveal" role="group" aria-label="Filter stays">
+            <button class="filter active" type="button" data-filter="all" aria-pressed="true">All</button>
+            <button class="filter" type="button" data-filter="coast" aria-pressed="false">Coast</button>
+            <button class="filter" type="button" data-filter="desert" aria-pressed="false">Desert</button>
+            <button class="filter" type="button" data-filter="mountains" aria-pressed="false">Mountains</button>
+          </div>
+        </div>
+
+        <div class="stay-grid" id="stayGrid">
+          <article class="stay-card reveal" data-region="coast">
+            <div class="stay-image-wrap">
+              <img src="assets/stay-tipaza.jpg" alt="Limestone guesthouse opening onto the ruins and sea at Tipaza" loading="lazy" />
+              <div class="stay-badge">Editor’s pick</div>
+              <button class="save-button" type="button" aria-label="Save Dar Tipasa" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" /></svg>
+              </button>
+              <button class="card-link" type="button" data-stay="Dar Tipasa" aria-label="View Dar Tipasa">
+                View stay <span>↗</span>
+              </button>
+            </div>
+            <div class="stay-meta"><span>Tipaza · Coast</span><span>From €170 / night</span></div>
+            <h3>Dar Tipasa</h3>
+            <p>Old stone, salt air, and mornings among the ruins.</p>
+          </article>
+
+          <article class="stay-card reveal" data-region="desert">
+            <div class="stay-image-wrap">
+              <img src="assets/stay-ghardaia.jpg" alt="Earth-toned terrace overlooking the palm grove and old city of Ghardaia" loading="lazy" />
+              <div class="stay-badge">New hideaway</div>
+              <button class="save-button" type="button" aria-label="Save Maison du M'Zab" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" /></svg>
+              </button>
+              <button class="card-link" type="button" data-stay="Maison du M'Zab" aria-label="View Maison du M'Zab">
+                View stay <span>↗</span>
+              </button>
+            </div>
+            <div class="stay-meta"><span>Ghardaïa · Desert</span><span>From €145 / night</span></div>
+            <h3>Maison du M’Zab</h3>
+            <p>A quiet earthen retreat above a thousand palms.</p>
+          </article>
+
+          <article class="stay-card reveal" data-region="mountains">
+            <div class="stay-image-wrap">
+              <img src="assets/stay-kabylie.jpg" alt="A stone mountain cabin surrounded by olive trees and mist in Kabylie" loading="lazy" />
+              <div class="stay-badge">Only on Marea</div>
+              <button class="save-button" type="button" aria-label="Save Tala Cabin" aria-pressed="false">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z" /></svg>
+              </button>
+              <button class="card-link" type="button" data-stay="Tala Cabin" aria-label="View Tala Cabin">
+                View stay <span>↗</span>
+              </button>
+            </div>
+            <div class="stay-meta"><span>Kabylie · Mountains</span><span>From €125 / night</span></div>
+            <h3>Tala Cabin</h3>
+            <p>Breakfast above the clouds, silence all around.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="quote-band" aria-label="Marea philosophy">
+        <div class="quote-orbit" aria-hidden="true">
+          <svg viewBox="0 0 200 200">
+            <defs><path id="circlePath" d="M100,100 m-72,0 a72,72 0 1,1 144,0 a72,72 0 1,1 -144,0" /></defs>
+            <text><textPath href="#circlePath">GO FURTHER • STAY LONGER • FEEL MORE • </textPath></text>
+          </svg>
+          <span>✦</span>
+        </div>
+        <blockquote class="reveal">“The real voyage is not about seeing new landscapes, but learning to look <em>again.</em>”</blockquote>
+      </section>
+
+      <section class="journal section" id="journal" aria-labelledby="journal-title">
+        <div class="journal-top">
+          <div class="section-label reveal"><span>03</span> Field notes</div>
+          <a class="text-link reveal" href="#newsletter">All stories <span>↗</span></a>
+        </div>
+        <h2 class="display-title reveal" id="journal-title">A little inspiration<br />for the <em>road.</em></h2>
+
+        <article class="feature-story reveal">
+          <div class="story-image">
+            <img src="assets/hero-mediterranean.jpg" alt="White coastal villa perched above the blue Mediterranean" loading="lazy" />
+            <span class="story-number">01 / 03</span>
+          </div>
+          <div class="story-content">
+            <div class="story-type">A Marea weekend · 6 min read</div>
+            <h3>48 hours where Oran meets the sea</h3>
+            <p>Clifftop swims, long lunches, and a sunset soundtrack of raï. Our slow guide to the wild coast west of the city.</p>
+            <a class="button button-dark" href="#newsletter">Read the field note <span>↗</span></a>
+          </div>
+        </article>
+
+        <div class="micro-stories">
+          <a class="micro-story reveal" href="#newsletter">
+            <span class="micro-index">02</span>
+            <div><p>Taste</p><h3>The family kitchens keeping couscous traditions alive</h3></div>
+            <span class="circle-arrow">↗</span>
+          </a>
+          <a class="micro-story reveal" href="#newsletter">
+            <span class="micro-index">03</span>
+            <div><p>Meet</p><h3>In the studio with a new generation of Algerian makers</h3></div>
+            <span class="circle-arrow">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="promise section" id="about" aria-labelledby="promise-title">
+        <div class="promise-intro">
+          <div class="section-label reveal"><span>04</span> Travel, with feeling</div>
+          <h2 class="display-title reveal" id="promise-title">Better journeys<br />begin with <em>care.</em></h2>
+        </div>
+        <div class="promise-list">
+          <article class="promise-item reveal">
+            <span class="promise-number">01</span>
+            <div><h3>Personally found</h3><p>Every stay is visited, every host known. Nothing makes the collection simply because it photographs well.</p></div>
+          </article>
+          <article class="promise-item reveal">
+            <span class="promise-number">02</span>
+            <div><h3>Deeply local</h3><p>Your trip supports independent hosts, artisans, guides, and the communities that make each place singular.</p></div>
+          </article>
+          <article class="promise-item reveal">
+            <span class="promise-number">03</span>
+            <div><h3>Made around you</h3><p>Tell us how you like to travel. We’ll shape the details and leave just enough room for the unexpected.</p></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+        <div class="newsletter-text reveal">
+          <div class="section-label light"><span>Notes from the road</span></div>
+          <h2 id="newsletter-title">Let the journey<br /><em>come to you.</em></h2>
+          <p>New hideaways, honest field notes, and the occasional invitation — sent slowly.</p>
+        </div>
+        <form class="newsletter-form reveal" id="newsletterForm">
+          <label for="email">Your email address</label>
+          <div class="email-row">
+            <input id="email" name="email" type="email" placeholder="you@somewhere.com" autocomplete="email" required />
+            <button type="submit" aria-label="Join the newsletter">↗</button>
+          </div>
+          <p class="form-note" id="formNote">One thoughtful letter a month. No clutter.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Marea home">
+          <svg class="brand-mark" viewBox="0 0 30 30" aria-hidden="true"><path d="M15 1.8c.5 8.1 5.1 12.7 13.2 13.2-8.1.5-12.7 5.1-13.2 13.2C14.5 20.1 9.9 15.5 1.8 15 9.9 14.5 14.5 9.9 15 1.8Z" /></svg>
+          <span>MAREA</span>
+        </a>
+        <p>Journeys to keep.<br />Made in Algeria.</p>
+      </div>
+      <div class="footer-links">
+        <div><p>Explore</p><a href="#stays">Stays</a><a href="#journal">Journeys</a><a href="#about">Our way</a></div>
+        <div><p>Follow</p><a href="#newsletter">Instagram ↗</a><a href="#newsletter">Pinterest ↗</a><a href="#newsletter">Substack ↗</a></div>
+        <div><p>Say hello</p><a href="mailto:hello@marea.travel">hello@marea.travel</a><a href="tel:+213555010212">+213 555 010 212</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Marea Travel</span><span>Made slowly, travelled lightly.</span><a href="#top">Back to top ↑</a></div>
+    </footer>
+
+    <dialog class="escape-dialog" id="escapeDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" id="dialogClose" type="button" aria-label="Close dialog">×</button>
+      <div class="dialog-icon" aria-hidden="true">✦</div>
+      <p class="eyebrow">Your journey starts here</p>
+      <h2 id="dialogTitle">Let’s find your<br /><em>way there.</em></h2>
+      <p id="dialogCopy">We’ll curate a few soulful escapes and send them your way within 24 hours.</p>
+      <form id="enquiryForm">
+        <label for="enquiryEmail">Where should we send your shortlist?</label>
+        <div class="dialog-email-row">
+          <input type="email" id="enquiryEmail" placeholder="Email address" required />
+          <button type="submit">Send my shortlist <span>↗</span></button>
+        </div>
+      </form>
+      <p class="dialog-note">No commitment. Just beautiful possibilities.</p>
+    </dialog>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
